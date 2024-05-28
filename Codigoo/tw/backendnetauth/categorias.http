@@ -1,0 +1,30 @@
+GET https://localhost:7074/api/categorias
+
+###
+
+GET https://localhost:7074/api/categorias
+Content-Type: application/json
+
+###
+
+POST https://localhost:7074/api/peliculas
+Content-Type: application/json
+
+
+###
+
+PUT https://localhost:7074/api/categorias/16
+Content-Type: application/json
+
+{
+    "peliculaid": 16,
+    "titulo": "pw patrol: la super pelicula",
+    "sinopsis": "Un meteorito magico aterrixa en adeventure cuty y otorga supepoderes a los cachorros de pow patrol",
+    "anio": 2024,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGI4NTNlODItMGJlZi00OTIwLTlkM2ItMWFkZjJhZDIzMDc3XkEyXkFqcGdeQXVyMTEyNzQ1MTk0._V1_SX300.jpg",
+    "categorias": [1,2,3]
+}
+
+###
+
+DELETE https://localhost:7074/api/categorias/16

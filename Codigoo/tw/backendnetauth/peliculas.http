@@ -1,0 +1,40 @@
+GET https://localhost:7074/api/peliculas
+
+###
+
+GET https://localhost:7074/api/peliculas?s=Dun
+
+###
+
+GET https://localhost:7074/api/peliculas/2
+
+###
+
+POST https://localhost:7074/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Los vengadores",
+    "sinopsis": " Cuando un enemigo inesperado surge como una gran amenaza para la seguridad mundial, Nick Fury, director de la Agencia SHIELD, decide reclutar a un equipo para salvar al mundo de un desastre casi ...",
+    "anio": "2012",
+    "poster": "https://http2.mlstatic.com/D_NQ_NP_810279-MLM41571618624_042020-O.webp",
+    "categorias": [1,2,3]
+}
+
+###
+
+PUT https://localhost:7074/api/peliculas/16
+Content-Type: application/json
+
+{
+    "peliculaid": 16,
+    "titulo": "pw patrol: la super pelicula",
+    "sinopsis": "Un meteorito magico aterrixa en adeventure cuty y otorga supepoderes a los cachorros de pow patrol",
+    "anio": 2024,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGI4NTNlODItMGJlZi00OTIwLTlkM2ItMWFkZjJhZDIzMDc3XkEyXkFqcGdeQXVyMTEyNzQ1MTk0._V1_SX300.jpg",
+    "categorias": [1,2,3]
+}
+
+###
+
+DELETE https://localhost:7074/api/peliculas/19
